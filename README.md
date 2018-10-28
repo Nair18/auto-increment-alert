@@ -1,0 +1,1 @@
+This script contains the code to identify those tables in database that are having auto-increment ids and are running short off those ids. Once it identifies those tables it will send and alert to slack using the webhook through the script.
