@@ -28,5 +28,10 @@ I did this opertion using alter table command.
 
 ![pic6](https://user-images.githubusercontent.com/15075776/47617495-a5e2ab00-daed-11e8-9876-7dda0e76e6c2.png)
 
+--> Formula to calculate auto-increment ratio is:
+
+![pic7](https://user-images.githubusercontent.com/15075776/47617677-93697100-daef-11e8-811a-2f7b06ea0e98.png)
+
+
 
 --> Hope this readme was useful in understanding what exactly my scrip does. Feel free to explore and edit.
