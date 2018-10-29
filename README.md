@@ -14,17 +14,17 @@ I did this opertion using alter table command.
 ![pic3](https://user-images.githubusercontent.com/15075776/47616956-ee4b9a00-dae8-11e8-8ad3-5a8c6c9cfc43.png)
 
 
---> Now when you run python script, see what happens. Look at the last message in the pic. It reads --> "table T2 are about to run short of auto-increment id".  
+--> Now when you run python script, see what happens. Look at the last message in the pic below. It reads --> "table T2 are about to run short of auto-increment id".  
 
 ![pic4](https://user-images.githubusercontent.com/15075776/47616957-f0adf400-dae8-11e8-8af6-b3bfeafcb699.png)
 
 
---> This is the query I used, to identify whether there is any table in database that is running short of auto-incement ids.
+--> Below is the query I used, to identify whether there is any table in database that is running short of auto-incement ids.
 
 ![pic5](https://user-images.githubusercontent.com/15075776/47617492-a2e7ba80-daed-11e8-8fd5-b76c51230ecb.png)
 
   
-  --> This query gives a beautiful table that contains the auto-increment ratio of each table in database. If this ratio is around 0.954, that means about 95% of the ids are used up and are about to run short of ids.
+  --> Above query gives a beautiful table that contains the auto-increment ratio of each table in database. If this ratio is around 0.954, that means about 95% of the ids are used up and are about to run short of ids.
 
 ![pic6](https://user-images.githubusercontent.com/15075776/47617495-a5e2ab00-daed-11e8-9876-7dda0e76e6c2.png)
 
