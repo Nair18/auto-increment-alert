@@ -1,6 +1,6 @@
 This script contains the code to identify those tables in database that are having auto-increment ids and are running short off those ids. Once it identifies those tables it will send an alert to slack using the webhook through the script. Lets visualize this scenario through the screenshots.
 
-This pic below shows that currently I have two tables in my postamn(name of the database) database, table T1 and table T2. Each table has auto-increment id. In table T1 the auto-increment id starts by default from index 1. while in table T2 the auto-increment id starts from index 100000000. Both the tables have sufficient ids because the max value of the int(11) is 2147483647. Here int(11) is the data type of the primary keys in both tables.
+This pic below shows that currently I have two tables in my postman(name of the database) database, table T1 and table T2. Each table has auto-increment id. In table T1 the auto-increment id starts by default from index 1. while in table T2 the auto-increment id starts from index 100000000. Both the tables have sufficient ids because the max value of the int(11) is 2147483647. Here int(11) is the data type of the primary keys in both tables.
 
 ![pic2](https://user-images.githubusercontent.com/15075776/47616953-ebe94000-dae8-11e8-8b95-16dbc7910502.png)
 
