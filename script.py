@@ -6,6 +6,7 @@ import time
 import json 
 import requests
 
+#send alert
 def call(ll):
     message = "hello, "
     if len(ll)==0:
