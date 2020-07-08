@@ -4,24 +4,24 @@ This script contains the code to identify those tables in database that are havi
 
 # Build up
 
-This pic below shows that currently I have two tables in my database, table T1 and table T2. Each table has auto-increment id. In table T1 the auto-increment id starts by default from index 1. while in table T2 the auto-increment id starts from index 100000000. Both the tables have sufficient ids because the max value of the int(11) is 2147483647. Here int(11) is the data type of the primary keys in both tables.
+This pic below shows that currently I have two tables in my database, table T1 and table T2(Ignore the entries in the table, sorry if you think its offensive :) ). Each table has auto-increment id. In table T1 the auto-increment id starts by default from index 1. while in table T2 the auto-increment id starts from index 100000000. Both the tables have sufficient ids because the max value of the int(11) is 2147483647. Here int(11) is the data type of the primary keys in both tables.
 
 ![pic2](https://user-images.githubusercontent.com/15075776/47616953-ebe94000-dae8-11e8-8b95-16dbc7910502.png)
 
 # What happens when the script runs? 
 
-When you run the python script, following messages will appear on the slack #general channel screeen. We can send the alert to any channel accordingly the url will change. Here you can see that message reads --> "hello, everything is fine", that means everything is fine and ids are not running short of indexes. You see so many messages of same type because I used a timer due to which it sends the update to slack every 5 mins.
+When you run the python script, following messages will appear on the slack #general channel screeen. We can send the alert to any channel, accordingly the url will change. Here you can see that message reads --> "hello, everything is fine", that means everything is fine and ids are not running short of indexes. You see so many messages of same type because I used a timer due to which it sends the update to slack every 5 mins.
 
 ![pic1](https://user-images.githubusercontent.com/15075776/47616944-e0961480-dae8-11e8-89f7-403853476c42.png)
 
 # Recreating the scenario for testing
 
-Now in next step what I do is, I will change the auto-increment value of table T2 to some very big number such that the number is >2147483647(max limit of auto-increment id).
+Now in next step here's what I do, I will change the auto-increment value of table T2 to some very big number such that the number is >2147483647(max limit of auto-increment id).
 I did this opertion using alter table command.
 
 ![pic3](https://user-images.githubusercontent.com/15075776/47616956-ee4b9a00-dae8-11e8-8ad3-5a8c6c9cfc43.png)
 
-# Testimonials
+# Consequences
 
 Now when you run python script, see what happens. Look at the last message in the pic below. It reads --> "table T2 are about to run short of auto-increment id".  
 
